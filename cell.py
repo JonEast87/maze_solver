@@ -42,9 +42,9 @@ class Cell:
 		y_center2 = half_length + self._y1
 
 		if undo == False:
-			color = "red"
+			fill_color = "red"
 		else:
-			color = "gray"
+			fill_color = "gray"
 
 		line = Line(Point(x_center, y_center), Point(x_center2, y_center2))
 		self._win.draw_line(line, fill_color)
